@@ -1,0 +1,132 @@
+@charset "ISO-8859-1";
+
+
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ff6f61, #6a5acd);
+    color: #444;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+/* Container Styling */
+.container {
+    background: white;
+    padding: 40px;
+    border-radius: 15px;
+    box-shadow: 0px 10px 20px rgba(0, 0, 0, 0.4);
+    max-width: 500px;
+    width: 100%;
+    text-align: center;
+}
+
+/* Animated Heading */
+h1 {
+    font-size: 36px;
+    margin-bottom: 20px;
+    opacity: 0;
+    transform: translateY(-15px);
+    color: #333;
+    transition: all 0.6s ease-in-out;
+}
+
+h1.animate {
+    opacity: 2;
+    transform: translateY(0);
+}
+
+/* Form Styling */
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.form-group input[type="text"],
+.form-group input[type="number"] {
+    width: 90%;
+    padding: 10px 15px;
+    font-size: 16px;
+    border: 1px solid #ddd;
+    border-radius: 15px;
+    box-shadow: inset 0px 3px 6px rgba(0, 0, 0, 0.1);
+    transition: border 0.3s;
+}
+
+.form-group input[type="text"]:focus,
+.form-group input[type="number"]:focus {
+    border: 1px solid #74ebd5;
+    outline: none;
+}
+
+/* Submit Button */
+.form-group input[type="submit"] {
+    padding: 10px 20px;
+    font-size: 18px;
+    color: white;
+    background: #ff6f61;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.form-group input[type="submit"]:hover {
+    background: #5dc4b3;
+}
+
+
+h2 {
+		
+        text-align: center;
+        color: #fff;
+        text-shadow: 2px 2px 5px #333;
+    }
+
+ a {
+        text-decoration: none;
+        color: #007BFF;
+        font-weight: bold;
+        transition: color 0.3s ease;
+    }
+
+    a:hover {
+        color: #0056b3;
+    }
+
+    .back-link {
+        display: block;
+        text-align: right;
+        margin-right: 20px;
+        margin-top: 20px;
+        font-size: 18px;
+    }
+
+    .back-link:hover {
+        text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+        table {
+            width: 100%;
+        }
+
+        th, td {
+            padding: 10px;
+        }
+
+        h1 {
+            font-size: 22px;
+        }
+
+        .back-link {
+            font-size: 16px;
+        }
+    }
+
+
+

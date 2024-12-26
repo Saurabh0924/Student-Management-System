@@ -1,0 +1,97 @@
+@charset "ISO-8859-1";
+
+
+body {
+    font-family: 'Arial', sans-serif;
+    background: linear-gradient(135deg, #ff6f61, #6a5acd); 
+    color: white;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    margin-top: 50px;
+    font-size: 3rem;
+    color: white;
+    text-shadow: 3px 3px 10px rgba(0, 0, 0, 0.4); 
+}
+
+
+div {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+h2 {
+    font-size: 1.8rem;
+    margin: 15px 0;
+    font-weight: bold;
+}
+
+a {
+    text-decoration: none;
+    color: #fff;
+    background: #ff8c00;
+    padding: 15px 30px;
+    border-radius: 30px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    font-size: 1.2rem;
+    font-weight: bold;
+    transition: all 0.3s ease-in-out; 
+}
+
+
+a:hover {
+    background: #ff6600;
+    box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+    transform: translateY(-5px); 
+}
+
+
+a:active {
+    background: #e65c00;
+    transform: translateY(2px); 
+}
+
+
+h2 + h2 {
+    margin-top: 40px;
+}
+
+
+
+#animatedImage {
+    display: block;
+    margin: 50px auto;
+    width: 150px;
+    height: auto;
+    opacity: 0;
+    animation: fadeIn 2s ease-out forwards, bounce 2s infinite;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes bounce {
+    0%, 100% {
+        transform: translateY(0);
+    }
+    50% {
+        transform: translateY(-15px);
+    }
+}
+
+
+
+
+
